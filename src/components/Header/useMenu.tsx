@@ -172,31 +172,7 @@ const useMenu: UseMenu = () => {
 
    
 
-    if (featureEnabled(Feature.MISO, chainId)) {
-      const misoMenu = {
-        key: 'miso',
-        title: i18n._(t`MISO`),
-        icon: <RocketIcon width={20} />,
-        items: [
-          {
-            key: 'marketplace',
-            title: i18n._(t`Marketplace`),
-            link: '/miso',
-          },
-        ],
-      }
-
-      if (chainId !== ChainId.ETHEREUM) {
-        misoMenu.items.push({
-          key: 'launchpad',
-          title: i18n._(t`Launchpad`),
-          link: '/miso/auction',
-        })
-      }
-
-      menu.push(misoMenu)
-    }
-
+   
     const exploreMenu: MenuItemLeaf[] = []
 
     if (featureEnabled(Feature.STAKING, chainId)) {

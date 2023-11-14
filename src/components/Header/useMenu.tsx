@@ -170,50 +170,9 @@ const useMenu: UseMenu = () => {
       menu.push(farmItems)
     }
 
-    if (featureEnabled(Feature.KASHI, chainId)) {
-      menu.push({
-        key: 'kashi',
-        title: i18n._(t`Kashi`),
-        icon: <SwitchVerticalIcon width={20} className="rotate-90 filter" />,
-        items: [
-          {
-            key: 'lend',
-            title: i18n._(t`Lend`),
-            link: '/kashi?view=lend',
-          },
-          {
-            key: 'borrow',
-            title: i18n._(t`Borrow`),
-            link: '/kashi?view=borrow',
-          },
-        ],
-      })
-    }
+   
 
-    if (featureEnabled(Feature.MISO, chainId)) {
-      const misoMenu = {
-        key: 'miso',
-        title: i18n._(t`MISO`),
-        icon: <RocketIcon width={20} />,
-        items: [
-          {
-            key: 'marketplace',
-            title: i18n._(t`Marketplace`),
-            link: '/miso',
-          },
-        ],
-      }
-
-      if (chainId !== ChainId.ETHEREUM) {
-        misoMenu.items.push({
-          key: 'launchpad',
-          title: i18n._(t`Launchpad`),
-          link: '/miso/auction',
-        })
-      }
-
-      menu.push(misoMenu)
-    }
+    
 
     const exploreMenu: MenuItemLeaf[] = []
 
@@ -260,11 +219,7 @@ const useMenu: UseMenu = () => {
           title: 'Dashboard',
           link: `/analytics`,
         },
-        {
-          key: 'xsushi',
-          title: 'xSUSHI',
-          link: '/analytics/xsushi',
-        },
+        
         {
           key: 'tokens',
           title: 'Tokens',
@@ -278,21 +233,7 @@ const useMenu: UseMenu = () => {
       ],
     }
 
-    if (featureEnabled(Feature.BENTOBOX, chainId)) {
-      analyticsMenu.items.push({
-        key: 'farms',
-        title: 'Farms',
-        link: `/analytics/farms`,
-      })
-    }
-
-    if (featureEnabled(Feature.BENTOBOX, chainId)) {
-      analyticsMenu.items.push({
-        key: 'bentobox',
-        title: 'BentoBox',
-        link: `/analytics/bentobox`,
-      })
-    }
+   
 
     if (featureEnabled(Feature.ANALYTICS, chainId)) {
       menu.push(analyticsMenu)
@@ -321,18 +262,8 @@ const useMenu: UseMenu = () => {
         })
       }
 
-      if (featureEnabled(Feature.KASHI, chainId)) {
-        portfolio.items.push({
-          key: 'lending',
-          title: 'Lending',
-          link: `/account/lending?account=${account}`,
-        })
-        portfolio.items.push({
-          key: 'borrowing',
-          title: 'Borrowing',
-          link: `/account/borrowing?account=${account}`,
-        })
-      }
+     
+      
       menu.push(portfolio)
     }
 

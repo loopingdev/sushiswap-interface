@@ -172,7 +172,30 @@ const useMenu: UseMenu = () => {
 
    
 
-    
+    if (featureEnabled(Feature.MISO, chainId)) {
+      const misoMenu = {
+        key: 'miso',
+        title: i18n._(t`MISO`),
+        icon: <RocketIcon width={20} />,
+        items: [
+          {
+            key: 'marketplace',
+            title: i18n._(t`Marketplace`),
+            link: '/miso',
+          },
+        ],
+      }
+
+      if (chainId !== ChainId.ETHEREUM) {
+        misoMenu.items.push({
+          key: 'launchpad',
+          title: i18n._(t`Launchpad`),
+          link: '/miso/auction',
+        })
+      }
+
+      menu.push(misoMenu)
+    }
 
     const exploreMenu: MenuItemLeaf[] = []
 
@@ -219,7 +242,11 @@ const useMenu: UseMenu = () => {
           title: 'Dashboard',
           link: `/analytics`,
         },
-        
+        {
+          key: 'xsushi',
+          title: 'xSUSHI',
+          link: '/analytics/xsushi',
+        },
         {
           key: 'tokens',
           title: 'Tokens',
@@ -233,7 +260,21 @@ const useMenu: UseMenu = () => {
       ],
     }
 
-   
+    if (featureEnabled(Feature.BENTOBOX, chainId)) {
+      analyticsMenu.items.push({
+        key: 'farms',
+        title: 'Farms',
+        link: `/analytics/farms`,
+      })
+    }
+
+    if (featureEnabled(Feature.BENTOBOX, chainId)) {
+      analyticsMenu.items.push({
+        key: 'bentobox',
+        title: 'BentoBox',
+        link: `/analytics/bentobox`,
+      })
+    }
 
     if (featureEnabled(Feature.ANALYTICS, chainId)) {
       menu.push(analyticsMenu)

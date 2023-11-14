@@ -173,7 +173,7 @@ const useMenu: UseMenu = () => {
    
 
    
-    const exploreMenu: MenuItemLeaf[] = []
+   
 
     if (featureEnabled(Feature.STAKING, chainId)) {
       exploreMenu.push({

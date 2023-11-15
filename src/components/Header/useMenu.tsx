@@ -184,6 +184,11 @@ const useMenu: UseMenu = () => {
             link: '/miso/auction',
           },
           {
+            key: 'perpetual',
+            title: i18n._(t`Perpetual`),
+            link: 'https://perp.pattieswap.finance/',
+          },
+          {
             key: 'pattiecity',
             title: i18n._(t`Pattie City`),
             link: 'https://pattiecity.com',

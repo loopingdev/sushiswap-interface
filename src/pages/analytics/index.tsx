@@ -63,7 +63,7 @@ function _Analytics(): JSX.Element {
             {i18n._(t`PattieSwap Analytics.`)}
           </Typography>
           <Typography variant="sm" weight={400}>
-            {i18n._(t`Dive deeper in the analytics of Sushi Bar, BentoBox, Pools, Farms and Tokens.`)}
+            {i18n._(t`Detailed Analytics for PattieSwap`)}
           </Typography>
         </div>
       </TridentHeader>

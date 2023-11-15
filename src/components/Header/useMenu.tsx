@@ -208,7 +208,15 @@ const useMenu: UseMenu = () => {
       })
     }
 
-    
+    if (exploreMenu.length > 0) {
+      menu.push({
+        key: 'explore',
+        title: i18n._(t``),
+        items: exploreMenu,
+        icon: <GlobeIcon width={20} />,
+      })
+    }
+
     let analyticsMenu: MenuItem = {
       key: 'analytics',
       title: i18n._(t`Analytics`),

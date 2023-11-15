@@ -149,27 +149,7 @@ const useMenu: UseMenu = () => {
       })
     }
 
-    if (featureEnabled(Feature.LIQUIDITY_MINING, chainId)) {
-      const farmItems = {
-        key: 'farm',
-        title: i18n._(t`Farm`),
-        icon: <SwitchVerticalIcon width={20} className="rotate-90 filter" />,
-        items: [
-          {
-            key: 'farm',
-            title: i18n._(t`Onsen Menu`),
-            link: '/farm',
-          },
-          {
-            key: 'my-farms',
-            title: i18n._(t`My Farms`),
-            link: '/farm?filter=portfolio',
-          },
-        ],
-      }
-      menu.push(farmItems)
-    }
-
+   
    
 
     if (featureEnabled(Feature.MISO, chainId)) {

@@ -6,7 +6,6 @@ import {
   CurrencyAmount,
   Percent,
   SUSHI_ADDRESS,
-  USDC_ADDRESS,
   Trade as V2Trade,
   TradeType,
   WNATIVE_ADDRESS,

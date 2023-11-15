@@ -33,7 +33,7 @@ const Footer = () => {
               {i18n._(t`Our community is building a comprehensive decentralized trading platform for the future of finance. Join
               us!`)}
             </Typography>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
               <a href="https://twitter.com/Pattieswap" target="_blank" rel="noreferrer">
                 <TwitterIcon width={16} className="text-low-emphesis" />
               </a>

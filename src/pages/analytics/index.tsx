@@ -56,11 +56,11 @@ function _Analytics(): JSX.Element {
 
   return (
     <>
-      <NextSeo title={`Sushi Analytics`} />
+      <NextSeo title={`PattieSwap Analytics`} />
       <TridentHeader className="sm:!flex-row justify-between items-center" pattern="bg-bubble">
         <div>
           <Typography variant="h2" className="text-high-emphesis" weight={700}>
-            {i18n._(t`Sushi Analytics.`)}
+            {i18n._(t`PattieSwap Analytics.`)}
           </Typography>
           <Typography variant="sm" weight={400}>
             {i18n._(t`Dive deeper in the analytics of Sushi Bar, BentoBox, Pools, Farms and Tokens.`)}

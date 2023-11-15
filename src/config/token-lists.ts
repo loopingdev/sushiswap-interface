@@ -16,6 +16,7 @@ const ROLL_LIST = 'https://app.tryroll.com/tokens.json'
 // const DHEDGE_LIST = 'https://list.dhedge.eth.link'
 const SUSHI_LIST = 'https://token-list.sushi.com'
 const CHAINLINK_LIST = 'https://token-list.sushi.com/chainlink'
+const PATTIE_LIST = 'https://raw.githubusercontent.com/Pattieswap/assets/main/token.json'
 
 export const UNSUPPORTED_LIST_URLS: string[] = [BA_LIST]
 
@@ -36,6 +37,7 @@ const DEFAULT_LIST_OF_LISTS_TO_DISPLAY: string[] = [
   SET_LIST,
   ROLL_LIST,
   NFTX_LIST,
+  PATTIE_LIST
   // DHEDGE_LIST,
 ]
 
@@ -45,4 +47,4 @@ export const DEFAULT_LIST_OF_LISTS: string[] = [
 ]
 
 // default lists to be 'active' aka searched across
-export const DEFAULT_ACTIVE_LIST_URLS: string[] = [ SUSHI_LIST,CHAINLINK_LIST, NFTX_LIST]
+export const DEFAULT_ACTIVE_LIST_URLS: string[] = [ PATTIE_LIST,SUSHI_LIST,CHAINLINK_LIST, NFTX_LIST]

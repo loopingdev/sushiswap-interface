@@ -55,7 +55,7 @@ export function useSwapActionHandlers(): {
 
   const inputCurrencyId = router.query.inputCurrency || 'ETH'
   const outputCurrencyId =
-    router.query.outputCurrency || (chainId && chainId in USDC_ADDRESS ? USDC_ADDRESS[chainId] : undefined)
+    router.query.outputCurrency || (chainId && chainId in SUSHI_ADDRESS ? SUSHI_ADDRESS[chainId] : undefined)
 
   const onCurrencySelection = useCallback(
     (field: Field, currency: Currency) => {

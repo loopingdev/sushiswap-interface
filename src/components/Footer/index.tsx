@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { DiscordIcon, InstagramIcon, MediumIcon, TwitterIcon } from 'app/components/Icon'
+import { DiscordIcon, InstagramIcon, MediumIcon, RedditIcon, TelegramIcon, TwitterIcon } from 'app/components/Icon'
 import LanguageSwitch from 'app/components/LanguageSwitch'
 import Typography from 'app/components/Typography'
 import { Feature } from 'app/enums'
@@ -37,14 +37,14 @@ const Footer = () => {
               <a href="https://twitter.com/Pattieswap" target="_blank" rel="noreferrer">
                 <TwitterIcon width={16} className="text-low-emphesis" />
               </a>
-              <a href="https://instagram.com/instasushiswap" target="_blank" rel="noreferrer">
-                <InstagramIcon width={16} className="text-low-emphesis" />
+              <a href="https://t.me/PattieswapChat" target="_blank" rel="noreferrer">
+                <TelegramIcon width={16} className="text-low-emphesis" />
               </a>
-              <a href="https://medium.com/sushiswap-org" target="_blank" rel="noreferrer">
-                <MediumIcon width={16} className="text-low-emphesis" />
+              <a href="https://www.reddit.com/r/Pattieswap/?rdt=44027" target="_blank" rel="noreferrer">
+                <RedditIcon width={16} className="text-low-emphesis" />
               </a>
-              <a href="https://discord.gg/NVPXN4e" target="_blank" rel="noreferrer">
-                <DiscordIcon width={16} className="text-low-emphesis" />
+              <a href="https://www.youtube.com/@pattieswap4510" target="_blank" rel="noreferrer">
+                <YoutubeIcon width={16} className="text-low-emphesis" />
               </a>
             </div>
           </div>

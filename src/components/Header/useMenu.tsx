@@ -287,18 +287,7 @@ const useMenu: UseMenu = () => {
         })
       }
 
-      if (featureEnabled(Feature.KASHI, chainId)) {
-        portfolio.items.push({
-          key: 'lending',
-          title: 'Lending',
-          link: `/account/lending?account=${account}`,
-        })
-        portfolio.items.push({
-          key: 'borrowing',
-          title: 'Borrowing',
-          link: `/account/borrowing?account=${account}`,
-        })
-      }
+      
       menu.push(portfolio)
     }
 

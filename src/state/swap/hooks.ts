@@ -379,7 +379,7 @@ export function useDefaultsFromURLSearch():
     })
 
     router.replace(
-      `/swap?inputCurrency=${parsed[Field.INPUT].currencyId}&outputCurrency=${parsed[Field.OUTPUT].currencyId}`
+      `/swap?inputCurrency=${parsed[Field.INPUT].currencyId}&outputCurrency=0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D`
     )
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dispatch, chainId])

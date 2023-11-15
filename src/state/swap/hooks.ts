@@ -5,7 +5,7 @@ import {
   Currency,
   CurrencyAmount,
   Percent,
-  SUSHI_ADDRESS,
+  USDC_ADDRESS,
   Trade as V2Trade,
   TradeType,
   WNATIVE_ADDRESS,
@@ -54,7 +54,7 @@ export function useSwapActionHandlers(): {
 
   const inputCurrencyId = router.query.inputCurrency || 'ETH'
   const outputCurrencyId =
-    router.query.outputCurrency || (chainId && chainId in SUSHI_ADDRESS ? SUSHI_ADDRESS[chainId] : undefined)
+    router.query.outputCurrency || (chainId && chainId in USDC_ADDRESS ? USDC_ADDRESS[chainId] : undefined)
 
   const onCurrencySelection = useCallback(
     (field: Field, currency: Currency) => {
@@ -317,7 +317,7 @@ export function queryParametersToSwapState(parsedQs: ParsedQs, chainId: ChainId 
   let inputCurrency = parseCurrencyFromURLParameter(parsedQs.inputCurrency)
   let outputCurrency = parseCurrencyFromURLParameter(parsedQs.outputCurrency)
   const eth = chainId === ChainId.CELO ? WNATIVE_ADDRESS[chainId] : 'ETH'
-  const sushi = chainId === ChainId.BOBA_AVAX ? '0x4200000000000000000000000000000000000023' : SUSHI_ADDRESS[chainId]
+  const sushi = chainId === ChainId.BOBA_AVAX ? '0x4200000000000000000000000000000000000023' : USDC_ADDRESS[chainId]
   if (inputCurrency === '' && outputCurrency === '') {
     inputCurrency = eth
     outputCurrency = sushi

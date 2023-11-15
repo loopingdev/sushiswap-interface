@@ -175,7 +175,7 @@ const useMenu: UseMenu = () => {
     if (featureEnabled(Feature.MISO, chainId)) {
       const misoMenu = {
         key: 'miso',
-        title: i18n._(t`PattiePad`),
+        title: i18n._(t`Pattie Ecosystem`),
         icon: <RocketIcon width={20} />,
         items: [
           {
@@ -183,6 +183,12 @@ const useMenu: UseMenu = () => {
             title: i18n._(t`Launchpad`),
             link: '/miso/auction',
           },
+          {
+            key: 'pattiecity',
+            title: i18n._(t`Pattie City`),
+            link: 'https://pattiecity.com',
+          },
+          
         ],
       }
 

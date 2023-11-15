@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { DiscordIcon, RedditIcon, TelegramIcon, TwitterIcon } from 'app/components/Icon'
+import { DiscordIcon, RedditIcon, TelegramIcon, TwitterIcon, YoutubeIcon } from 'app/components/Icon'
 import LanguageSwitch from 'app/components/LanguageSwitch'
 import Typography from 'app/components/Typography'
 import { Feature } from 'app/enums'
@@ -43,8 +43,8 @@ const Footer = () => {
               <a href="https://www.reddit.com/r/Pattieswap/?rdt=44027" target="_blank" rel="noreferrer">
                 <RedditIcon width={16} className="text-low-emphesis" />
               </a>
-              <a href="https://discord.gg/NVPXN4e" target="_blank" rel="noreferrer">
-                <DiscordIcon width={16} className="text-low-emphesis" />
+              <a href="https://youtube.com" target="_blank" rel="noreferrer">
+                <YoutubeIcon width={16} className="text-low-emphesis" />
               </a>
             </div>
           </div>

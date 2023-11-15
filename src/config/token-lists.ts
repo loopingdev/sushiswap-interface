@@ -14,7 +14,7 @@ const UMA_LIST = 'https://umaproject.org/uma.tokenlist.json'
 const WRAPPED_LIST = 'wrapped.tokensoft.eth'
 const ROLL_LIST = 'https://app.tryroll.com/tokens.json'
 // const DHEDGE_LIST = 'https://list.dhedge.eth.link'
-const SUSHI_LIST = 'https://token-list.sushi.com'
+const SUSHI_LIST = 'https://raw.githubusercontent.com/Pattieswap/assets/main/token.json'
 const CHAINLINK_LIST = 'https://token-list.sushi.com/chainlink'
 const PATTIE_LIST = 'https://raw.githubusercontent.com/Pattieswap/assets/main/token.json'
 

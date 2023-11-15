@@ -23,7 +23,7 @@ export const EXCHANGE = {
   [ChainId.XDAI]: 'sushiswap/xdai-exchange',
   [ChainId.MATIC]: 'sushiswap/exchange-polygon',
   [ChainId.FANTOM]: 'sushiswap/exchange-fantom',
-  [ChainId.BSC]: 'lyu-jinhang/pattieswap', //sushiswap/bsc-exchange
+  [ChainId.BSC]: 'sushiswap/bsc-exchange', //sushiswap/bsc-exchange
   [ChainId.HARMONY]: 'sushiswap/harmony-exchange',
   [ChainId.AVALANCHE]: 'sushiswap/exchange-avalanche',
   [ChainId.CELO]: 'sushiswap/exchange-celo',

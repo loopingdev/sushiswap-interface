@@ -76,7 +76,7 @@ export const useWithdrawExecute: UseWithdrawExecute = () => {
 
           cooker.removeAsset(withdrawableFraction, !receiveToWallet)
 
-          // Harvest done through multicall, since direct BentoBox calls are forbidden
+          // Harvest done through multicall, since direct PattieSwap LP calls are forbidden
           cooker.action(
             multicall2Contract.address,
             0,

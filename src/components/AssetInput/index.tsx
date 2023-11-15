@@ -374,7 +374,7 @@ const AssetInputWalletSwitch: FC<AssetInputWalletSwitchProps> = ({ checked, onCh
             weight={700}
             className="text-right text-high-emphesis lg:text-center lg:flex lg:gap-1 lg:items-center lg:justify-center"
           >
-            {checked ? i18n._(t`Wallet`) : i18n._(t`BentoBox`)} {isDesktop && helper}
+            {checked ? i18n._(t`Wallet`) : i18n._(t`PattieSwap LP`)} {isDesktop && helper}
           </Typography>
         </div>
         <div className="order-2 lg:order-1">

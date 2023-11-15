@@ -11,10 +11,10 @@ export const DiscoverHeader: FC = () => {
     <TridentHeader className="sm:!flex-row justify-between items-center" pattern="bg-bubble">
       <div>
         <Typography variant="h2" className="text-high-emphesis" weight={700}>
-          {i18n._(t`BentoBox Analytics.`)}
+          {i18n._(t`PattieSwap LP Analytics.`)}
         </Typography>
         <Typography variant="sm" weight={400}>
-          {i18n._(t`Click on the column name to sort BentoBox tokens by price, liquidity, volume, APY etc...`)}
+          {i18n._(t`Click on the column name to sort PattieSwap LP tokens by price, liquidity, volume, APY etc...`)}
         </Typography>
       </div>
     </TridentHeader>

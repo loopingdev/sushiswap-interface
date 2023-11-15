@@ -18,12 +18,12 @@ import useBaseStrategy from './useBaseStrategy'
 
 export const GENERAL = (i18n: I18n): StrategyGeneralInfo => ({
   name: i18n._(t`Cream → Bento`),
-  steps: [i18n._(t`SUSHI`), i18n._(t`crXSUSHI`), i18n._(t`BentoBox`)],
+  steps: [i18n._(t`SUSHI`), i18n._(t`crXSUSHI`), i18n._(t`PattieSwap LP`)],
   zapMethod: 'stakeSushiToCreamToBento',
   unzapMethod: 'unstakeSushiFromCreamFromBento',
-  description: i18n._(t`Stake SUSHI for xSUSHI into Cream and deposit crXSUSHI into BentoBox in one click.`),
+  description: i18n._(t`Stake SUSHI for xSUSHI into Cream and deposit crXSUSHI into PattieSwap LP in one click.`),
   inputSymbol: i18n._(t`SUSHI`),
-  outputSymbol: i18n._(t`crXSUSHI in BentoBox`),
+  outputSymbol: i18n._(t`crXSUSHI in PattieSwap LP`),
 })
 
 export const tokenDefinitions: StrategyTokenDefinitions = {
@@ -50,7 +50,7 @@ const useStakeSushiToCreamToBentoStrategy = (): StrategyHook => {
   const sushiPerXSushi = useSushiPerXSushi(true)
   const { data: crxSushiBentoBalance } = useBentoBalanceV2(CRXSUSHI.address)
 
-  // Strategy ends in BentoBox so use BaseBentoBox strategy
+  // Strategy ends in PattieSwap LP so use BaseBentoBox strategy
   const general = useMemo(() => GENERAL(i18n), [i18n])
   const baseStrategy = useBaseStrategy({
     id: 'stakeSushiToCreamToBentoStrategy',
@@ -58,7 +58,7 @@ const useStakeSushiToCreamToBentoStrategy = (): StrategyHook => {
     tokenDefinitions,
   })
 
-  // Add in BentoBox trait as output is in BentoBox
+  // Add in PattieSwap LP trait as output is in PattieSwap LP
   const { setBalances, calculateOutputFromInput: _, ...strategy } = useBentoBoxTrait(baseStrategy)
 
   useEffect(() => {

@@ -45,7 +45,7 @@ const ClassicStandardAside = () => {
         <div className="flex items-center gap-2">
           <Typography variant="sm">{i18n._(t`Withdraw to:`)}</Typography>
           <Typography id="txt-withdraw-to" variant="sm" className="text-high-emphesis" weight={700}>
-            {outputToWallet ? i18n._(t`Wallet`) : i18n._(t`BentoBox`)}
+            {outputToWallet ? i18n._(t`Wallet`) : i18n._(t`PattieSwap LP`)}
           </Typography>
           <BentoBoxFundingSourceModal />
         </div>
@@ -72,7 +72,7 @@ const ClassicStandardAside = () => {
           type="error"
           message={i18n._(
             // @ts-ignore TYPE NEEDS FIXING
-            t`Native ${NATIVE[chainId || 1].symbol} can't be withdrawn to BentoBox, ${
+            t`Native ${NATIVE[chainId || 1].symbol} can't be withdrawn to PattieSwap LP, ${
               WNATIVE[chainId || 1].symbol
             } will be received instead`
           )}

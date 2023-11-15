@@ -44,7 +44,7 @@ const ClassicSingleAside = () => {
         </Typography>
         <Typography variant="sm">
           {i18n._(
-            t`Select any asset from your wallet or BentoBox balance to invest in this pool.  That asset will be split and converted into the pool assets and deposited in equal value.`
+            t`Select any asset from your wallet or PattieSwap LP balance to invest in this pool.  That asset will be split and converted into the pool assets and deposited in equal value.`
           )}
         </Typography>
       </div>
@@ -52,7 +52,7 @@ const ClassicSingleAside = () => {
         <div className="flex items-center gap-2">
           <Typography variant="sm">{i18n._(t`Withdraw to:`)}</Typography>
           <Typography variant="sm" className="text-high-emphesis" weight={700}>
-            {outputToWallet ? i18n._(t`Wallet`) : i18n._(t`BentoBox`)}
+            {outputToWallet ? i18n._(t`Wallet`) : i18n._(t`PattieSwap LP`)}
           </Typography>
           <BentoBoxFundingSourceModal />
         </div>
@@ -78,7 +78,7 @@ const ClassicSingleAside = () => {
           type="error"
           message={i18n._(
             // @ts-ignore TYPE NEEDS FIXING
-            t`Native ${NATIVE[chainId || 1].symbol} can't be withdrawn to BentoBox, ${
+            t`Native ${NATIVE[chainId || 1].symbol} can't be withdrawn to PattieSwap LP, ${
               WNATIVE[chainId || 1].symbol
             } will be received instead`
           )}

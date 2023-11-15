@@ -62,7 +62,7 @@ const DepositView: FC<DepositViewProps> = ({ onClose, onBack }) => {
 
   return (
     <div className="flex flex-col gap-4">
-      <HeadlessUiModal.Header header={i18n._(t`Deposit to BentoBox`)} onClose={onClose} onBack={onBack} />
+      <HeadlessUiModal.Header header={i18n._(t`Deposit to PattieSwap LP`)} onClose={onClose} onBack={onBack} />
       <AssetInput
         title={''}
         currency={currency}
@@ -84,7 +84,7 @@ const DepositView: FC<DepositViewProps> = ({ onClose, onBack }) => {
             {(valuePlusBalance || bentoBalance)?.toSignificant(6)}
           </Typography>
           <Typography variant="xxs" className="text-secondary">
-            {i18n._(t`Total in BentoBox`)}
+            {i18n._(t`Total in PattieSwap LP`)}
           </Typography>
         </div>
       </HeadlessUiModal.BorderedContent>

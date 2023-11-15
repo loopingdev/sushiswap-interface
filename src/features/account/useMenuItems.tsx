@@ -17,7 +17,7 @@ const useMenuItems = () => {
     },
     {
       key: 'bentobox',
-      label: i18n._(t`BentoBox`),
+      label: i18n._(t`PattieSwap LP`),
       icon: <BentoboxIcon width={20} height={20} />,
       link: `/account/${account}/bentobox`,
     },

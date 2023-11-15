@@ -20,7 +20,7 @@ export async function signMasterContractApproval(
   approved: boolean,
   chainId: ChainId | undefined
 ): Promise<string> {
-  const warning = approved ? 'Give FULL access to funds in (and approved to) BentoBox?' : 'Revoke access to BentoBox?'
+  const warning = approved ? 'Give FULL access to funds in (and approved to) PattieSwap LP?' : 'Revoke access to PattieSwap LP?'
   const nonce = await bentoBoxContract?.nonces(user)
   const message = {
     warning,
@@ -42,7 +42,7 @@ export async function signMasterContractApproval(
     },
     primaryType: 'SetMasterContractApproval',
     domain: {
-      name: 'BentoBox V1',
+      name: 'PattieSwap LP V1',
       chainId: chainId,
       verifyingContract: bentoBoxContract?.address,
     },
@@ -67,14 +67,14 @@ enum Action {
   ADD_COLLATERAL = 10,
   UPDATE_EXCHANGE_RATE = 11,
 
-  // Function on BentoBox
+  // Function on PattieSwap LP
   BENTO_DEPOSIT = 20,
   BENTO_WITHDRAW = 21,
   BENTO_TRANSFER = 22,
   BENTO_TRANSFER_MULTIPLE = 23,
   BENTO_SETAPPROVAL = 24,
 
-  // Any external call (except to BentoBox)
+  // Any external call (except to PattieSwap LP)
   CALL = 30,
 }
 

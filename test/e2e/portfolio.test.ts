@@ -61,7 +61,7 @@ describe('Balances:', () => {
     }
   })
 
-  test('Should get correct BentoBox balances', async () => {
+  test('Should get correct PattieSwap LP balances', async () => {
     await myBentoBoxPage.navigateTo()
     const appBalances = await myBentoBoxPage.getBentoBalances()
 

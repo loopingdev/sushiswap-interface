@@ -48,7 +48,7 @@ export const KashiMarketDepositButton: FC<KashiMarketDepositButtonProps> = ({ sp
       {permitError && (
         <Typography variant="sm" className="p-4 text-center border rounded border-yellow/40 text-yellow">
           {i18n._(
-            t`Something went wrong during signing of the approval. This is expected for hardware wallets, such as Trezor and Ledger. Click 'Approve BentoBox' again for approving using the fallback method`
+            t`Something went wrong during signing of the approval. This is expected for hardware wallets, such as Trezor and Ledger. Click 'Approve PattieSwap LP' again for approving using the fallback method`
           )}
         </Typography>
       )}

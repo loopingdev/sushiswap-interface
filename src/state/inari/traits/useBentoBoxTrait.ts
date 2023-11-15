@@ -22,8 +22,8 @@ export interface BaseStrategyWithBentoBoxTraitHook
   overrides: string[]
 }
 
-// Use this trait when strategies have BentoBox as their output.
-// Strategies that end up in BentoBox don't need to to approve inari to spend tokens when unzapping
+// Use this trait when strategies have PattieSwap LP as their output.
+// Strategies that end up in PattieSwap LP don't need to to approve inari to spend tokens when unzapping
 // hence the approveCallback is null when unzapping
 const useBentoBoxTrait = (props: BaseStrategyHook): BaseStrategyWithBentoBoxTraitHook => {
   // @ts-ignore TYPE NEEDS FIXING

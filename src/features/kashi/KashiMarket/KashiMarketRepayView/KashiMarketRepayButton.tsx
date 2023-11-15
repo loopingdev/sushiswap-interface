@@ -100,12 +100,12 @@ export const KashiMarketRepayButton: FC<
   warnings
     .addError(
       Boolean(chainId && asset.wrapped.address === WNATIVE_ADDRESS[chainId] && repayFromWallet && repayMax),
-      `You cannot MAX repay ${asset.symbol} directly from your wallet. Please deposit your ${asset.symbol} into the BentoBox first, then repay. Because your debt is slowly accruing interest we can't predict how much it will be once your transaction gets mined.`
+      `You cannot MAX repay ${asset.symbol} directly from your wallet. Please deposit your ${asset.symbol} into the PattieSwap LP first, then repay. Because your debt is slowly accruing interest we can't predict how much it will be once your transaction gets mined.`
     )
     .addError(
       permitError,
       i18n._(
-        t`Something went wrong during signing of the approval. This is expected for hardware wallets, such as Trezor and Ledger. Click 'Approve BentoBox' again for approving using the fallback method`
+        t`Something went wrong during signing of the approval. This is expected for hardware wallets, such as Trezor and Ledger. Click 'Approve PattieSwap LP' again for approving using the fallback method`
       )
     )
     .addError(
@@ -114,7 +114,7 @@ export const KashiMarketRepayButton: FC<
       new Warning(
         Boolean(balance && repayAmount && balance.lessThan(repayAmount)),
         `Please make sure your ${
-          !repayFromWallet ? 'BentoBox' : 'wallet'
+          !repayFromWallet ? 'PattieSwap LP' : 'wallet'
         } balance is sufficient to repay and then try again.`,
         true
       )

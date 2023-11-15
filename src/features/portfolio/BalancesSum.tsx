@@ -88,7 +88,7 @@ export const BalancesSum: FC<{ account: string }> = ({ account }) => {
       </div>
       <div className="flex gap-10">
         <_BalancesSum assetAmounts={walletBalances} label={i18n._(t`Wallet`)} loading={wLoading} />
-        <_BalancesSum assetAmounts={bentoBalances} label={i18n._(t`BentoBox`)} loading={bLoading} />
+        <_BalancesSum assetAmounts={bentoBalances} label={i18n._(t`PattieSwap LP`)} loading={bLoading} />
         <div className="flex flex-col gap-1">
           <Typography variant="sm">{i18n._(t`Assets`)}</Typography>
           <Typography variant="lg">{allAssets.total}</Typography>

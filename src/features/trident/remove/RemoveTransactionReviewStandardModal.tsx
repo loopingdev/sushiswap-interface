@@ -77,7 +77,7 @@ const RemoveTransactionReviewStandardModal: FC<RemoveTransactionReviewStandardMo
               {i18n._(t`Deposited to your:`)}
             </Typography>
             <Typography weight={700} variant="lg" className="text-high-emphesis">
-              {outputToWallet ? i18n._(t`Wallet`) : i18n._(t`BentoBox`)}
+              {outputToWallet ? i18n._(t`Wallet`) : i18n._(t`PattieSwap LP`)}
             </Typography>
           </HeadlessUIModal.BorderedContent>
           <div className="flex justify-between px-2 py-1">

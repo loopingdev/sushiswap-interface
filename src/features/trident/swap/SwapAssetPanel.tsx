@@ -134,7 +134,7 @@ const WalletSwitch: FC<
         component="span"
         className="flex items-center gap-1 px-2 py-1 rounded-full cursor-pointer text-high-emphesis hover:text-white hover:shadow bg-dark-800 hover:bg-dark-700"
       >
-        {spendFromWallet ? i18n._(t`Wallet`) : i18n._(t`BentoBox`)}
+        {spendFromWallet ? i18n._(t`Wallet`) : i18n._(t`PattieSwap LP`)}
       </Typography>
       <BentoBoxFundingSourceModal />
     </Typography>

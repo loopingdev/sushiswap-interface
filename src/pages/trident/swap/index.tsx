@@ -241,7 +241,7 @@ const Swap = ({ banners }: SwapProps) => {
         <Typography variant="xs" weight={700} component="span">
           Tip
         </Typography>
-        : {i18n._(t`BentoBox to BentoBox swaps are up to 50% cheaper than normal swaps`)}
+        : {i18n._(t`PattieSwap LP to PattieSwap LP swaps are up to 50% cheaper than normal swaps`)}
       </Typography>
       <Banner banners={banners} />
     </>

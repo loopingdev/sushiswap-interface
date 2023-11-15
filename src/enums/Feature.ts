@@ -2,7 +2,7 @@ export enum Feature {
   AMM = 'AMM',
   AMM_V2 = 'AMM V2',
   LIQUIDITY_MINING = 'Liquidity Mining',
-  BENTOBOX = 'BentoBox',
+  BENTOBOX = 'PattieSwap LP',
   KASHI = 'Kashi',
   MISO = 'MISO',
   ANALYTICS = 'Analytics',

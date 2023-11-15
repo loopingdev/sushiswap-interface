@@ -49,7 +49,7 @@ const Inari = () => {
               {i18n._(t`One-Click Strategies`)}
             </Typography>
             <Typography>
-              {i18n._(t`Take your SUSHI and invest in various strategies with one click! Earn extra yields with BentoBox, use as
+              {i18n._(t`Take your SUSHI and invest in various strategies with one click! Earn extra yields with PattieSwap LP, use as
               collateral on other platforms, and more!`)}
             </Typography>
           </div>

@@ -54,7 +54,7 @@ const ActionView: FC<ActionViewProps> = ({ onClose }) => {
           {activeModal === ActiveModal.WALLET_MENU && (
             <ActionItem
               svg={<BentoboxIcon width={20} height={20} />}
-              label={i18n._(t`Deposit ${currency?.symbol} to BentoBox`)}
+              label={i18n._(t`Deposit ${currency?.symbol} to PattieSwap LP`)}
               onClick={() => dispatch(setBalancesActiveModal({ activeModal: ActiveModal.DEPOSIT }))}
             />
           )}

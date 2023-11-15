@@ -163,7 +163,7 @@ const TridentApproveGate = ({
       {inputAmounts.every((el) => el?.greaterThan(ZERO)) &&
         [BentoApprovalState.NOT_APPROVED, BentoApprovalState.PENDING].includes(approvalState) && (
           <Button id="btn-approve" loading={approvalState === BentoApprovalState.PENDING} onClick={onClick}>
-            {i18n._(t`Approve BentoBox`)}
+            {i18n._(t`Approve PattieSwap LP`)}
           </Button>
         )}
 

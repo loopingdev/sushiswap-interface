@@ -369,7 +369,7 @@ describe('Swap:', () => {
     expect(requiresApprovalAfter).toBe(false)
   })
 
-  test('Should require approval once when swapping from BentoBox', async () => {
+  test('Should require approval once when swapping from PattieSwap LP', async () => {
     await approvalHelper.approveRouter(ADDRESSES.USDC, 0)
 
     const inToken = 'USDC'

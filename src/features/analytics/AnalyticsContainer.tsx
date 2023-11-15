@@ -38,7 +38,7 @@ export default function AnalyticsContainer({ children }): JSX.Element {
 
   if (featureEnabled(Feature.BENTOBOX, Number(chainId))) {
     items.push({
-      text: 'BentoBox',
+      text: 'PattieSwap LP',
       href: `/analytics/${chainId}/bentobox`,
     })
   }

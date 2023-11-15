@@ -17,7 +17,7 @@ const ClassicStandardAside = () => {
         </Typography>
         <Typography variant="sm">
           {i18n._(
-            t`Select any asset from your wallet or BentoBox balance to invest in this pool.  That asset will be split and converted into the pool assets and deposited in equal value.`
+            t`Select any asset from your wallet or PattieSwap LP balance to invest in this pool.  That asset will be split and converted into the pool assets and deposited in equal value.`
           )}
         </Typography>
       </div>

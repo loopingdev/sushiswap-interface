@@ -110,12 +110,12 @@ export const KashiMarketDetailsContentView: FC<KashiMarketDetailsView> = ({
         )}
         <div className="flex justify-between gap-4">
           <Typography variant="xs" className="flex items-center">
-            {i18n._(t`BentoBox strategy`)}
+            {i18n._(t`PattieSwap LP strategy`)}
             <QuestionHelper
               text={
                 <div>
                   <Typography variant="xs">
-                    BentoBox strategies can create yield for your liquidity while it is not lent out.
+                    PattieSwap LP strategies can create yield for your liquidity while it is not lent out.
                   </Typography>
                 </div>
               }

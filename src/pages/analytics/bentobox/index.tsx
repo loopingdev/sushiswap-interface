@@ -10,7 +10,7 @@ import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import useSWR, { SWRConfig } from 'swr'
 
-export default function BentoBox({ fallback }: { fallback: any }) {
+export default function PattieSwap LP({ fallback }: { fallback: any }) {
   return (
     <SWRConfig value={{ fallback }}>
       <_BentoBox />
@@ -29,7 +29,7 @@ function _BentoBox(): JSX.Element {
 
   return (
     <>
-      <NextSeo title={`BentoBox Anlytics`} />
+      <NextSeo title={`PattieSwap LP Anlytics`} />
       <DiscoverHeader />
       <TridentBody>
         <div className="text-2xl font-bold text-high-emphesis">KPIs</div>

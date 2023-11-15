@@ -103,7 +103,7 @@ const InformationDisclosure = ({ farm }) => {
             {` `}
             {farm.pair.token0.symbol}
             {` `}
-            {i18n._(t`into your wallet or BentoBox.`)}
+            {i18n._(t`into your wallet or PattieSwap LP.`)}
           </Typography>
         )}
       </div>

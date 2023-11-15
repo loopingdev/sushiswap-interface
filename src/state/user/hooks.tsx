@@ -276,7 +276,7 @@ export const computeKashiPairAddress = ({
 export function toKashiLiquidityToken([collateral, asset]: [Token, Token]): Token {
   if (collateral.chainId !== asset.chainId) throw new Error('Not matching chain IDs')
   if (collateral.equals(asset)) throw new Error('Tokens cannot be equal')
-  if (!BENTOBOX_ADDRESS[collateral.chainId]) throw new Error('No BentoBox factory address on this chain')
+  if (!BENTOBOX_ADDRESS[collateral.chainId]) throw new Error('No PattieSwap LP factory address on this chain')
   if (!KASHI_ADDRESS[collateral.chainId]) throw new Error('No Kashi address on this chain')
   // console.log({
   //   collateral,

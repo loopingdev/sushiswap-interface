@@ -14,14 +14,14 @@ import useBaseStrategy from './useBaseStrategy'
 
 export const GENERAL = (i18n: I18n): StrategyGeneralInfo => ({
   name: i18n._(t`SUSHI → Bento`),
-  steps: [i18n._(t`SUSHI`), i18n._(t`xSUSHI`), i18n._(t`BentoBox`)],
+  steps: [i18n._(t`SUSHI`), i18n._(t`xSUSHI`), i18n._(t`PattieSwap LP`)],
   zapMethod: 'stakeSushiToBento',
   unzapMethod: 'unstakeSushiFromBento',
   description:
-    i18n._(t`Stake SUSHI for xSUSHI and deposit into BentoBox in one click. xSUSHI in BentoBox is automatically
+    i18n._(t`Stake SUSHI for xSUSHI and deposit into PattieSwap LP in one click. xSUSHI in PattieSwap LP is automatically
                 invested into a passive yield strategy, and can be lent or used as collateral for borrowing in Kashi.`),
   inputSymbol: i18n._(t`SUSHI`),
-  outputSymbol: i18n._(t`xSUSHI in BentoBox`),
+  outputSymbol: i18n._(t`xSUSHI in PattieSwap LP`),
 })
 
 export const tokenDefinitions: StrategyTokenDefinitions = {
@@ -46,7 +46,7 @@ const useStakeSushiToBentoStrategy = (): StrategyHook => {
   const balances = useTokenBalances(account, [SUSHI[ChainId.ETHEREUM], XSUSHI])
   const { data: xSushiBentoBalance } = useBentoBalanceV2(XSUSHI.address)
 
-  // Strategy ends in BentoBox so use BaseBentoBox strategy
+  // Strategy ends in PattieSwap LP so use BaseBentoBox strategy
   const general = useMemo(() => GENERAL(i18n), [i18n])
   const baseStrategy = useBaseStrategy({
     id: 'stakeSushiToBentoStrategy',
@@ -54,7 +54,7 @@ const useStakeSushiToBentoStrategy = (): StrategyHook => {
     tokenDefinitions,
   })
 
-  // Add in BentoBox trait as output is in BentoBox
+  // Add in PattieSwap LP trait as output is in PattieSwap LP
   const { setBalances, ...strategy } = useBentoBoxTrait(baseStrategy)
 
   useEffect(() => {

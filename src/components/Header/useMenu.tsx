@@ -184,17 +184,11 @@ const useMenu: UseMenu = () => {
 
     const exploreMenu: MenuItemLeaf[] = []
 
-    if (featureEnabled(Feature.STAKING, chainId)) {
-      exploreMenu.push({
-        key: 'sushi-bar',
-        title: i18n._(t`BAR`),
-        link: '',
-      })
-    }
+   
 
     
 
-    if (exploreMenu.length > 0) {
+    if (exploreMenu.length = 0) {
       menu.push({
         key: 'explore',
         title: i18n._(t`Explore`),

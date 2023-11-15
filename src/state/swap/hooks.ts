@@ -385,7 +385,7 @@ export function useDefaultsFromURLSearch():
       `/swap?inputCurrency=${parsed[Field.INPUT].currencyId}&outputCurrency=0x0ee4024e8d5ae9affce26f692028407dd2050b7d&chainId=56`
     )
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, )
+  }, [dispatch, chainId])
 
   return result
 }

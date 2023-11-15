@@ -58,7 +58,7 @@ const useMenu: UseMenu = () => {
       {
         key: 'add-liquidity',
         title: i18n._(t`Add`),
-        link: `/add/ETH/0x0ee4024e8d5ae9affce26f692028407dd2050b7d${[chainId]}`,
+        link: `/add/ETH/${SUSHI_ADDRESS[chainId]}`,
       },
       // {
       //   key: 'remove-liquidity',

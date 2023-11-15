@@ -58,14 +58,7 @@ export const BentoBalances = ({ account, chainId }: Balances) => {
 
   const { config } = useBentoBoxTableConfig(assets, loading)
 
-  return (
-    <div className="flex flex-col gap-3">
-      <Typography weight={700} variant="lg" className="px-2 text-high-emphesis">
-        {i18n._(t`BentoBox Balances`)}
-      </Typography>
-      <AssetBalances config={config} onSelect={handleRowClick} />
-    </div>
-  )
+  
 }
 
 export const WalletBalances = ({ account, chainId }: Balances) => {

@@ -724,6 +724,7 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
     BSC.MIM,
     BSC.FRAX,
     BSC.STG,
+    BSC.PATTIE,
   ],
   [ChainId.ARBITRUM]: [
     ...WRAPPED_NATIVE_ONLY[ChainId.ARBITRUM],

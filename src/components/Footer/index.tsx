@@ -48,7 +48,36 @@ const Footer = () => {
               </a>
             </div>
           </div>
-         
+          <div className="flex flex-col gap-1 text-right">
+            <Typography variant="xs" weight={700} className="mt-2.5 hover:text-high-emphesis">
+              {i18n._(t`Products`)}
+            </Typography>
+            <Link href={featureEnabled(Feature.TRIDENT, chainId) ? '/trident/pools' : '/legacy/pool'} passHref={true}>
+              <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
+                {i18n._(t`Liquidity Pools`)}
+              </Typography>
+            </Link>
+            <Link href="/kashi" passHref={true}>
+              <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
+                {i18n._(t`Kashi Lending`)}
+              </Typography>
+            </Link>
+            <Link href="/miso" passHref={true}>
+              <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
+                {i18n._(t`PattiePad`)}
+              </Typography>
+            </Link>
+            <a href="https://shoyunft.com" target="_blank" rel="noreferrer">
+              <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
+                {i18n._(t`Shoyu NFT`)}
+              </Typography>
+            </a>
+            <Link href="/tools" passHref={true}>
+              <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
+                {i18n._(t`Tools`)}
+              </Typography>
+            </Link>
+          </div>
           <div className="flex flex-col gap-1 md:text-right lg:text-right">
             <Typography variant="xs" weight={700} className="mt-2.5 hover:text-high-emphesis">
               {i18n._(t`Help`)}
@@ -114,7 +143,31 @@ const Footer = () => {
               </Typography>
             </a>
           </div>
-         
+          <div className="flex flex-col gap-1 text-right">
+            <Typography variant="xs" weight={700} className="mt-2.5 hover:text-high-emphesis">
+              {i18n._(t`Protocol`)}
+            </Typography>
+            <a href="" target="_blank" rel="noreferrer">
+              <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
+                {i18n._(t`Apply for Onsen`)}
+              </Typography>
+            </a>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSecahmrXOJytn-wOUB8tEfONzOTP4zjKqz3sIzNzDDs9J8zcA/viewform"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
+                {i18n._(t`Apply for Miso`)}
+              </Typography>
+            </a>
+
+            <Link href="/vesting" passHref={true}>
+              <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
+                {i18n._(t`Vesting`)}
+              </Typography>
+            </Link>
+          </div>
           <div className="flex flex-col gap-1">
             <LanguageSwitch />
           </div>

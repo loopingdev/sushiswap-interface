@@ -43,9 +43,7 @@ const Footer = () => {
               <a href="https://www.reddit.com/r/Pattieswap/?rdt=44027" target="_blank" rel="noreferrer">
                 <RedditIcon width={16} className="text-low-emphesis" />
               </a>
-              <a href="https://www.youtube.com/@pattieswap4510" target="_blank" rel="noreferrer">
-                <YoutubeIcon width={16} className="text-low-emphesis" />
-              </a>
+             
             </div>
           </div>
           <div className="flex flex-col gap-1 text-right">

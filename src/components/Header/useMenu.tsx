@@ -177,16 +177,16 @@ const useMenu: UseMenu = () => {
         key: 'miso',
         title: i18n._(t`PattiePad`),
         icon: <RocketIcon width={20} />,
-        items: 
+        items: [
+          {
+            key: 'launchpad',
+            title: i18n._(t`Launchpad`),
+            link: '/miso/auction',
+          },
+        ],
       }
 
-      if (chainId !== ChainId.ETHEREUM) {
-        misoMenu.items.push({
-          key: 'launchpad',
-          title: i18n._(t`Launchpad`),
-          link: '/miso/auction',
-        })
-      }
+      
 
       menu.push(misoMenu)
     }

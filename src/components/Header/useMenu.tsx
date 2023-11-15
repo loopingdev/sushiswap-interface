@@ -180,7 +180,7 @@ const useMenu: UseMenu = () => {
         items: [
           {
             key: 'launchpad',
-            title: i18n._(t`Launchpad`),
+            title: i18n._(t`PattiePad`),
             link: '/miso/auction',
           },
           {

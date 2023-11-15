@@ -37,11 +37,11 @@ const Auction = () => {
           </div>
           <div className="flex flex-col gap-2">
             <Typography variant="h2" className="text-high-emphesis" weight={700}>
-              {i18n._(t`New Auction`)}
+              {i18n._(t`PattiePad`)}
             </Typography>
             <Typography variant="sm" weight={400}>
               <Trans
-                id="Choose which type of auction you’d like to hold.  Each of the three types has their own unique characteristics, so choose the one you think is most appropriate for your project.  Need more information on what these mean, and which is best for you? Read our documentation {link}."
+                id="Create your token sales."
                 values={{ link }}
                 components={Fragment}
               />

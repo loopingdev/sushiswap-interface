@@ -30,13 +30,9 @@ const Desktop: FC = () => {
           <Container maxWidth="full" className="mx-auto">
             <div className="flex items-center justify-between gap-4 px-6">
               <div className="flex gap-4">
-              <div className="">
-                <Image src="https://raw.githubusercontent.com/Pattieswap/assets/main/logo.png" alt="Sushi logo" width="28px" height="28px" />
-              </div>
-              <Typography variant="h2" weight={700} className="tracking-[0.02em] scale-y-90 hover:text-high-emphesis">
-                PattieSwap
-              </Typography>
-            </div>
+                <div className="flex items-center w-6 mr-4">
+                  <Image src="https://raw.githubusercontent.com/Pattieswap/assets/main/logo.png" alt="Sushi logo" width="24px" height="24px" />
+                </div>
                 {menu.map((node) => {
                   return <NavigationItem node={node} key={node.key} />
                 })}

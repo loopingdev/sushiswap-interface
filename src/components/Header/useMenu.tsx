@@ -187,31 +187,17 @@ const useMenu: UseMenu = () => {
     if (featureEnabled(Feature.STAKING, chainId)) {
       exploreMenu.push({
         key: 'sushi-bar',
-        title: i18n._(t``),
+        title: i18n._(t`BAR`),
         link: '',
       })
     }
 
-    if (featureEnabled(Feature.MEOWSHI, chainId)) {
-      exploreMenu.push({
-        key: 'meowshi',
-        title: i18n._(t``),
-        link: '',
-      })
-    }
-
-    if (featureEnabled(Feature.MEOWSHI, chainId)) {
-      exploreMenu.push({
-        key: 'yield',
-        title: i18n._(t``),
-        link: '',
-      })
-    }
+    
 
     if (exploreMenu.length > 0) {
       menu.push({
         key: 'explore',
-        title: i18n._(t``),
+        title: i18n._(t`Explore`),
         items: exploreMenu,
         icon: <GlobeIcon width={20} />,
       })

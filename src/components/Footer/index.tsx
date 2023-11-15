@@ -64,7 +64,7 @@ const Footer = () => {
             </Link>
             <Link href="/miso" passHref={true}>
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
-                {i18n._(t`MISO Launchpad`)}
+                {i18n._(t`PattiePad`)}
               </Typography>
             </Link>
             <a href="https://shoyunft.com" target="_blank" rel="noreferrer">

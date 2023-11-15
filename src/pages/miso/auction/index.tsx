@@ -22,7 +22,7 @@ const Auction = () => {
 
   return (
     <>
-      <NextSeo title="MISO Launchpad" />
+      <NextSeo title="PattiePad" />
       <MisoHeader className="bg-cover bg-miso-bowl">
         <div className="flex flex-col gap-4">
           <div>

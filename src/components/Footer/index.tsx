@@ -52,14 +52,14 @@ const Footer = () => {
             <Typography variant="xs" weight={700} className="mt-2.5 hover:text-high-emphesis">
               {i18n._(t`Products`)}
             </Typography>
-            <Link href={featureEnabled(Feature.TRIDENT, chainId) ? '/trident/pools' : '/legacy/pool'} passHref={true}>
+            <Link href={featureEnabled(Feature.TRIDENT, chainId) ? '' : ''} passHref={true}>
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`Liquidity Pools`)}
               </Typography>
             </Link>
-            <Link href="/kashi" passHref={true}>
+            <Link href="https://pattiecity.com" passHref={true}>
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
-                {i18n._(t`Kashi Lending`)}
+                {i18n._(t`Pattie city`)}
               </Typography>
             </Link>
             <Link href="/miso" passHref={true}>
@@ -67,12 +67,12 @@ const Footer = () => {
                 {i18n._(t`PattiePad`)}
               </Typography>
             </Link>
-            <a href="https://shoyunft.com" target="_blank" rel="noreferrer">
+            <a href="" target="_blank" rel="noreferrer">
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
-                {i18n._(t`Shoyu NFT`)}
+                {i18n._(t`PattieSwap`)}
               </Typography>
             </a>
-            <Link href="/tools" passHref={true}>
+            <Link href="" passHref={true}>
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`Tools`)}
               </Typography>
@@ -82,22 +82,22 @@ const Footer = () => {
             <Typography variant="xs" weight={700} className="mt-2.5 hover:text-high-emphesis">
               {i18n._(t`Help`)}
             </Typography>
-            <a href="https://docs.sushi.com" target="_blank" rel="noreferrer">
+            <a href="https://pattieswap.finance" target="_blank" rel="noreferrer">
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`What is Sushi?`)}
               </Typography>
             </a>
-            <a href="https://discord.gg/NVPXN4e" target="_blank" rel="noreferrer">
+            <a href="https://t.me/Pattiswapchat" target="_blank" rel="noreferrer">
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
-                {i18n._(t`Ask on Discord`)}
+                {i18n._(t`Ask on Telegram`)}
               </Typography>
             </a>
-            <a href="https://twitter.com/sushiswap" target="_blank" rel="noreferrer">
+            <a href="https://twitter.com/pattieswap" target="_blank" rel="noreferrer">
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`Ask on Twitter`)}
               </Typography>
             </a>
-            <a href="https://forum.sushi.com" target="_blank" rel="noreferrer">
+            <a href="https://t.me/Pattiswapchat" target="_blank" rel="noreferrer">
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`Ask on Forum`)}
               </Typography>
@@ -107,24 +107,24 @@ const Footer = () => {
             <Typography variant="xs" weight={700} className="mt-2.5 hover:text-high-emphesis">
               {i18n._(t`Developers`)}
             </Typography>
-            <a href="https://docs.sushi.com" target="_blank" rel="noreferrer">
+            <a href="https://pattieswap.finance" target="_blank" rel="noreferrer">
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`GitBook`)}
               </Typography>
             </a>
-            <a href="https://github.com/sushiswap" target="_blank" rel="noreferrer">
+            <a href="https://github.com/pattieswap" target="_blank" rel="noreferrer">
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`GitHub`)}
               </Typography>
             </a>
-            <a href="https://dev.sushi.com" target="_blank" rel="noreferrer">
+            <a href="https://pattieswap.finance" target="_blank" rel="noreferrer">
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`Development`)}
               </Typography>
             </a>
-            <a href="https://docs.openmev.org" target="_blank" rel="noreferrer">
+            <a href="https://pattieswap.finance" target="_blank" rel="noreferrer">
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
-                {i18n._(t`SushiGuard`)}
+                {i18n._(t`PattieDocs`)}
               </Typography>
             </a>
           </div>
@@ -132,12 +132,12 @@ const Footer = () => {
             <Typography variant="xs" weight={700} className="mt-2.5 hover:text-high-emphesis">
               {i18n._(t`Governance`)}
             </Typography>
-            <a href="https://forum.sushi.com" target="_blank" rel="noreferrer">
+            <a href="https://t.me/PattieChat" target="_blank" rel="noreferrer">
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`Forum & Proposals`)}
               </Typography>
             </a>
-            <a href="https://snapshot.org/#/sushigov.eth" target="_blank" rel="noreferrer">
+            <a href="https://snapshot.org/#/pattieswap.eth" target="_blank" rel="noreferrer">
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
                 {i18n._(t`Vote`)}
               </Typography>
@@ -147,24 +147,24 @@ const Footer = () => {
             <Typography variant="xs" weight={700} className="mt-2.5 hover:text-high-emphesis">
               {i18n._(t`Protocol`)}
             </Typography>
-            <a href="https://rbieu62gj0f.typeform.com/to/KkrPkOFe" target="_blank" rel="noreferrer">
+            <a href="https://t.me/PattieChat" target="_blank" rel="noreferrer">
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
-                {i18n._(t`Apply for Onsen`)}
+                {i18n._(t`Apply for Listing`)}
               </Typography>
             </a>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSecahmrXOJytn-wOUB8tEfONzOTP4zjKqz3sIzNzDDs9J8zcA/viewform"
+              href=""
               target="_blank"
               rel="noreferrer"
             >
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
-                {i18n._(t`Apply for Miso`)}
+                {i18n._(t``)}
               </Typography>
             </a>
 
-            <Link href="/vesting" passHref={true}>
+            <Link href="" passHref={true}>
               <Typography variant="xs" className="text-low-emphesis hover:text-high-emphesis">
-                {i18n._(t`Vesting`)}
+                {i18n._(t``)}
               </Typography>
             </Link>
           </div>

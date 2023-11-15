@@ -40,7 +40,7 @@ const Footer = () => {
               <a href="https://t.me/PattieswapChat" target="_blank" rel="noreferrer">
                 <TelegramIcon width={16} className="text-low-emphesis" />
               </a>
-              <a href="https://www.reddit.com/r/Pattieswap/?rdt=44027 target="_blank" rel="noreferrer">
+              <a href="https://www.reddit.com/r/Pattieswap/?rdt=44027" target="blank" rel="noreferrer">
                 <RedditIcon width={16} className="text-low-emphesis" />
               </a>
               <a href="https://www.youtube.com/@pattieswap4510" target="_blank" rel="noreferrer">

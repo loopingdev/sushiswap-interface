@@ -34,7 +34,7 @@ const Footer = () => {
               us!`)}
             </Typography>
             <div className="flex items-center gap-4">
-              <a href="https://twitter.com/sushiswap" target="_blank" rel="noreferrer">
+              <a href="https://twitter.com/Pattieswap" target="_blank" rel="noreferrer">
                 <TwitterIcon width={16} className="text-low-emphesis" />
               </a>
               <a href="https://instagram.com/instasushiswap" target="_blank" rel="noreferrer">

@@ -43,8 +43,8 @@ const Footer = () => {
               <a href="https://www.reddit.com/r/Pattieswap/?rdt=44027" target="_blank" rel="noreferrer">
                 <RedditIcon width={16} className="text-low-emphesis" />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer">
-                <RedditIcon width={16} className="text-low-emphesis" />
+              <a href="https://discord.gg/" target="_blank" rel="noreferrer">
+                <DiscordIcon width={16} className="text-low-emphesis" />
               </a>
             </div>
           </div>

@@ -182,41 +182,33 @@ const useMenu: UseMenu = () => {
       menu.push(misoMenu)
     }
 
-    
+    const exploreMenu: MenuItemLeaf[] = []
 
     if (featureEnabled(Feature.STAKING, chainId)) {
       exploreMenu.push({
         key: 'sushi-bar',
-        title: i18n._(t`Sushi Bar`),
-        link: '/bar',
+        title: i18n._(t``),
+        link: '',
       })
     }
 
     if (featureEnabled(Feature.MEOWSHI, chainId)) {
       exploreMenu.push({
         key: 'meowshi',
-        title: i18n._(t`Meowshi`),
-        link: '/tools/meowshi',
+        title: i18n._(t``),
+        link: '',
       })
     }
 
     if (featureEnabled(Feature.MEOWSHI, chainId)) {
       exploreMenu.push({
         key: 'yield',
-        title: i18n._(t`Yield Strategies`),
-        link: '/tools/inari',
+        title: i18n._(t``),
+        link: '',
       })
     }
 
-    if (exploreMenu.length > 0) {
-      menu.push({
-        key: 'explore',
-        title: i18n._(t`Explore`),
-        items: exploreMenu,
-        icon: <GlobeIcon width={20} />,
-      })
-    }
-
+    
     let analyticsMenu: MenuItem = {
       key: 'analytics',
       title: i18n._(t`Analytics`),

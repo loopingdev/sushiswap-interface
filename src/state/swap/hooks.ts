@@ -39,12 +39,6 @@ export function useSwapState(): AppState['swap'] {
   return useAppSelector((state) => state.swap)
 }
 
-export const SUSHI_ADDRESS: Record<ChainId, string> = {
-  [ChainId.BSC]: '0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D',
-  // Add other chain addresses as needed
-  // [ChainId.CELO]: '...',
-  // [ChainId.BOBA_AVAX]: '...',
-};
 
 
 export function useSwapActionHandlers(): {

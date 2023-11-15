@@ -183,9 +183,14 @@ const useMenu: UseMenu = () => {
       menu.push(misoMenu)
     }
 
+<<<<<<< HEAD
     const exploreMenu: MenuItemLeaf[] = []
 
    
+=======
+    
+
+>>>>>>> parent of 1ee43303b (remove farm)
     let analyticsMenu: MenuItem = {
       key: 'analytics',
       title: i18n._(t`Analytics`),

@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { DiscordIcon, InstagramIcon, MediumIcon, TwitterIcon } from 'app/components/Icon'
+import { DiscordIcon, RedditIcon, TelegramIcon, TwitterIcon } from 'app/components/Icon'
 import LanguageSwitch from 'app/components/LanguageSwitch'
 import Typography from 'app/components/Typography'
 import { Feature } from 'app/enums'
@@ -33,17 +33,19 @@ const Footer = () => {
               {i18n._(t`Our community is building a comprehensive decentralized trading platform for the future of finance. Join
               us!`)}
             </Typography>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-4">
               <a href="https://twitter.com/Pattieswap" target="_blank" rel="noreferrer">
                 <TwitterIcon width={16} className="text-low-emphesis" />
               </a>
               <a href="https://t.me/PattieswapChat" target="_blank" rel="noreferrer">
-                <InstagramIcon width={16} className="text-low-emphesis" />
+                <TelegramIcon width={16} className="text-low-emphesis" />
               </a>
               <a href="https://www.reddit.com/r/Pattieswap/?rdt=44027" target="_blank" rel="noreferrer">
-                <MediumIcon width={16} className="text-low-emphesis" />
+                <RedditIcon width={16} className="text-low-emphesis" />
               </a>
-             
+              <a href="https://discord.gg/NVPXN4e" target="_blank" rel="noreferrer">
+                <DiscordIcon width={16} className="text-low-emphesis" />
+              </a>
             </div>
           </div>
           <div className="flex flex-col gap-1 text-right">
